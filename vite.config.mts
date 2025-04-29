@@ -7,6 +7,9 @@ import zaloMiniApp from 'zmp-vite-plugin'
 export default () => {
   return defineConfig({
     plugins: [react(), zaloMiniApp()],
+    build: {
+      outDir: "dist" 
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
